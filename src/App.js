@@ -5,7 +5,7 @@ import Number from "./components/Number"
 import Word from "./components/Word"
 import WordColorNumber from "./components/WordColorBackground"
 import React from "react";
-import {BrowserRouter, Route, Routes, Link} from "react-react-dom";
+import {BrowserRouter, Route, Routes, Link} from "react-router-dom";
 
 function App() {
   return (
