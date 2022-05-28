@@ -4,16 +4,23 @@ import Home from "./components/Home";
 import Number from "./components/Number"
 import Word from "./components/Word"
 import WordColorNumber from "./components/WordColorBackground"
-import {BrowserRouter as Router, Switch, Route, Link} from "react-dom";
+import React from "react";
+import {BrowserRouter, Route, Routes, Link} from "react-react-dom";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Router>
+        <BrowserRouter>
+        <p>
+          <Link to="/home"></Link>
+          <Link to="/number"></Link>
+          <Link to="/word"></Link>
+          <Link to="/Word/Color/BackgroundColor"></Link>
+        </p>
         <Route exact path ="/home" component={Home}/>
           <Home />
-        </Router>
+        </BrowserRouter>
       </header>
     </div>
   );
