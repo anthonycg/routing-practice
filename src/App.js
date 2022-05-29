@@ -9,20 +9,23 @@ import {BrowserRouter, Route, Routes, Link} from "react-router-dom";
 
 function App() {
   return (
+        <BrowserRouter>
     <div className="App">
       <header className="App-header">
-        <BrowserRouter>
-        <p>
+        <Home/>
+        {/* <p>
           <Link to="/home"></Link>
           <Link to="/number"></Link>
           <Link to="/word"></Link>
           <Link to="/Word/Color/BackgroundColor"></Link>
         </p>
-        <Route exact path ="/home" component={Home}/>
+        <Routes>
+        <Route exact path ="/" component={<Home />}/>
           <Home />
-        </BrowserRouter>
+        </Routes> */}
       </header>
     </div>
+        </BrowserRouter>
   );
 }
 
