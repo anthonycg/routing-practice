@@ -12,7 +12,10 @@ function App() {
         <BrowserRouter>
     <div className="App">
       <header className="App-header">
-        <Home/>
+        <Routes>
+          <Route path="/" element={<Home/>}></Route>
+        </Routes>
+        <Link to={"/:word"}>Go to about</Link>
         {/* <p>
           <Link to="/home"></Link>
           <Link to="/number"></Link>
